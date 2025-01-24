@@ -1,10 +1,7 @@
----
-"Vehículos Autónomos Nivel 2"
-description: "Sistema integrado de un carro robótico y un dron para detección y control de incendios."
----
-
 # 🚒 Vehículos Autónomos Nivel 2 para la Prevención y Control de Incendios
-
+---
+Descripción: "Sistema integrado de un carro robótico y un dron para detección y control de incendios."
+---
 ![Vehículos Autónomos](images/vehiculos_autonomos.jpg)
 
 ## 📌 Introducción
@@ -17,6 +14,8 @@ Implementar un sistema de vehículos autónomos de nivel 2 que colabore con los 
 
 ### 🚗 Solución Propuesta
 La solución consiste en un sistema integrado por un carro robótico y un dron, que operan en conjunto mediante protocolos de comunicación como UDP y HTTP. Estos vehículos contarán con modos de operación manual y automático, así como una interfaz web para control remoto. Utilizarán algoritmos de inteligencia artificial para detectar focos de incendio y asistir en la localización de personas en peligro.
+
+![Vehículos Autónomos](images/interfaz_solucion.jpg)
 
 ## 🎯 Objetivos
 
