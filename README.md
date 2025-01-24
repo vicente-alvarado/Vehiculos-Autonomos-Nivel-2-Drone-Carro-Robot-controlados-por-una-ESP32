@@ -1,7 +1,6 @@
-# 🚒 Vehículos Autónomos Nivel 2 para la Prevención y Control de Incendios
----
-Descripción: "Sistema integrado de un carro robótico y un dron para detección y control de incendios."
----
+# 🚒 Vehículos Autónomos de Nivel 2 para la Prevención y Control de Incendios
+**Descripción:** Un sistema avanzado que combina un carro robótico y un dron para la detección temprana, monitoreo y control de incendios, optimizando las operaciones de respuesta y mejorando la seguridad en zonas de riesgo.
+
 ![Vehículos Autónomos](images/vehiculos_autonomos.jpg)
 
 ## 📌 Introducción
@@ -15,7 +14,7 @@ Implementar un sistema de vehículos autónomos de nivel 2 que colabore con los 
 ### 🚗 Solución Propuesta
 La solución consiste en un sistema integrado por un carro robótico y un dron, que operan en conjunto mediante protocolos de comunicación como UDP y HTTP. Estos vehículos contarán con modos de operación manual y automático, así como una interfaz web para control remoto. Utilizarán algoritmos de inteligencia artificial para detectar focos de incendio y asistir en la localización de personas en peligro.
 
-![Vehículos Autónomos](images/interfaz_solucion.jpg)
+![Interzaf Gamepad](images/interfaz_solucion.jpg)
 
 ## 🎯 Objetivos
 
@@ -30,9 +29,6 @@ Desarrollar un sistema de vehículos autónomos nivel 2 para la detección y con
 - 🔬 Validar la funcionalidad del sistema mediante pruebas en entornos simulados y controlados.
 
 ## 🏗️ Descripción de Componentes
-
-![Componentes](images/componentes.jpg)
-
 ### 🔩 Hardware
 - **ESP32**: Microcontrolador principal del carro robótico.
 - **Drone DJI Tello**: Vehículo aéreo para monitoreo y detección de incendios.
@@ -62,7 +58,7 @@ Para compilar y ejecutar los códigos en la ESP32 y el Arduino UNO, se deben ins
 #### **🌐 Para la ESP32**
 - [WiFi](https://www.arduino.cc/en/Reference/WiFi) - Conectividad inalámbrica.
 - [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer) - Servidor web asincrónico.
-- [WiFiUdp](https://www.arduino.cc/en/Reference/WiFiUDP) - Comunicación UDP para control del dron DJI Tello.
+- **WiFiUdp** - Comunicación UDP para control del dron DJI Tello.
 
 ### 🔍 Consideraciones Importantes
 - **ESP32:** Se recomienda usar un conversor USB-TTL para cargar el código en la ESP32.
@@ -70,10 +66,21 @@ Para compilar y ejecutar los códigos en la ESP32 y el Arduino UNO, se deben ins
 - **DJI Tello:** Conectar la ESP32 a la red Wi-Fi del dron antes de iniciar la ejecución del código.
 - **Baterías LiPo:** Verificar el estado de carga antes de cada prueba para evitar fallos de energía.
 
+## Trabajos Relacionados
+
+### "Design and Deployment of an Autonomous Unmanned Ground Vehicle for Urban Firefighting Scenarios"
+Este estudio aborda el diseño y despliegue de un vehículo autónomo terrestre para escenarios de extinción de incendios urbanos. El vehículo está equipado con un brazo robótico y utiliza sensores a bordo para navegación autónoma y cámaras térmicas para la identificación de fuentes de fuego. Se valida mediante experimentos que demuestran la capacidad del sistema para identificar y extinguir fuentes de calor en edificios.
+
+### "Tello SDK 2.0 User Guide"
+Este manual ofrece una guía completa para el uso del SDK 2.0, permitiendo el control del dron DJI Tello a través del protocolo UDP. Proporciona instrucciones para establecer una conexión Wi-Fi entre el Tello y un dispositivo, enviar comandos de texto y recibir respuestas. Esto facilita el control del dron en aplicaciones como la vigilancia de incendios.
+
 ## 🏁 Conclusiones
 - 🚀 Se desarrolló un sistema de vehículos autónomos nivel 2 capaz de detectar y mitigar incendios.
 - 📡 Se logró una comunicación efectiva entre el dron y el carro mediante protocolos UDP y HTTP.
 - 🔥 Se recomienda integrar cámaras térmicas para mejorar la detección de incendios.
+- 🛸 El SDK 2.0 del dron DJI Tello facilita el control remoto y la automatización, lo que lo convierte en una herramienta útil para la vigilancia de incendios.
 
 ## 📎 Enlaces y Recursos
 - 🔗 [Repositorio GitHub](https://github.com/vicente-alvarado/Vehiculos-Autonomos-Nivel-2-Drone-Carro-Robot-controlados-por-una-ESP32.git)
+- 🔗 [“Design and Deployment of an Autonomous Unmanned Ground Vehicle for Urban Firefighting Scenarios”](https://arxiv.org/abs/2107.03582). arXiv.org. Accedido el 20 de enero de 2025.
+- 🔗 [Tello SDK 2.0 User Guide](https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide.pdf?). Accedido el 20 de enero de 2025.
